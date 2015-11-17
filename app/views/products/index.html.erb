@@ -21,7 +21,7 @@
 						<td> <%= product.description %> </td>
 						<td>
 							<%= link_to "Editar", edit_product_path(product) %>
-							<%= link_to "Eliminar", delete_product_path(product), method: :delete, data: { confirm: "¿Estás seguro de eliminar este producto?" } %>
+							<%= button_to "Eliminar", product, method: :delete, data: { confirm: "¿Estás seguro de eliminar este producto?" } %>
 						</td>
 					</tr>	
 				<% end %>
