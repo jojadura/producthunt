@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 # Todas las lineas anteriores son reemplazadas por:
 
   resources :products
+
+  root 'products#index'  #De esta manera al colocar http://localhost:3000/, va directo a la aplicacion y no a la pantalla de bienvenida de rails
 end
