@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'gravatar-ultimate'
-gem 'annotate'
+gem 'annotate'  #Anota los modelos con los campos de la BD
 
 # Use unicorn as the app server
 # gem 'unicorn'
