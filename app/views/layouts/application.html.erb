@@ -1,3 +1,6 @@
+
+<!-- Este archivo es la plantilla que se utiliza en todas las vistas al cargarlas -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +11,11 @@
 <body>
 	<% if flash[:notice] %>
 	<div class="alert alert-info"> <%= flash[:notice] %></div>
+	<% end %>
+
+
+	<% if signed_in? %>
+	  <div>Hola <%= current_user.name %> <%= button_to "Salir", logout_path, method: :delete %></div>
 	<% end %>
 
 <%= yield %>

@@ -1,5 +1,8 @@
 class ProductsController < ApplicationController
 
+	before_action :private_access, except: [:index, :show] 
+	# Cada vez que se llamen estas rutas, primero va a ejecutar el metodo :private_access, excepto para index y show en este caso.
+
 	def index
 		@products = Product.all  #el @ nos va permitir acceder a esa variable desde la vista		
 	end
