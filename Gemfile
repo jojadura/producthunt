@@ -27,6 +27,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'gravatar-ultimate'
 gem 'annotate'  #Anota los modelos con los campos de la BD
 gem "paperclip", "~> 4.3"
+gem "figaro"
 
 # Use unicorn as the app server
 # gem 'unicorn'
