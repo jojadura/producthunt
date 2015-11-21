@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :users , only: [:new, :create] 
   #son los dos unicos metodos que puede tener acceso el usuario, ver el formulario para registrarse y ya el registro como tal. No tendria ni editar ni eliminar.
   resources :products do
+    resource :vote, only: [:create, :destroy]
     resources :comments, only: [:create]
   end
 

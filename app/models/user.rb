@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
 	has_secure_password validations: false  #para que quede cifrado ese password.
 	has_many :products
 	has_many :comments
+	has_many :votes
 
 	validates :email, uniqueness: true, format: /@/
 	validates :password, presence: true, on: :create
