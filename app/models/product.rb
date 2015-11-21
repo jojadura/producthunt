@@ -13,7 +13,8 @@
 
 class Product < ActiveRecord::Base
 
-	belongs_to :user  #Agregarle un atributo a los productos para poder acceder al usuario, y con ese obtener los datos de ese usuario.
+	belongs_to :user  #Agregarle un atributo a los productos para poder acceder al usuario, y con ese obtener los datos de ese usuario. Asi relaciono Producto y Usuario.
+	has_many :comments 
 	
 	validates :name, presence: true
 	validates :url, presence: true
