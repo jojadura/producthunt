@@ -1,6 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "from@example.com"
-
+	
   def daily_products(user, products)
     @user = user
     @products = products
